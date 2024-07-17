@@ -1,0 +1,31 @@
+#main{
+    transition: 0.5s;
+}  
+
+.pad{
+    padding: 30px 40px;
+}
+
+.border{
+    padding-top: 10px;
+    border-radius: 8px 0 0 8px;
+    background-color: black;
+    text-align: center;
+    height: 100vh;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.height{
+    width: 180px;
+    height: 35px;
+    border-radius: 4px;
+}
