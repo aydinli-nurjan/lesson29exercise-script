@@ -10,43 +10,80 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>script exercise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-10 col-lg-10 pad">
-                <div class="row">
+                <div class="pad">
                     <div id="main"></div>
                 </div>
-            </div>
-            <div class="col-md-2 col-lg-2 border">
-                <div class="row">
-                    <input class="height" type="text" id="width" placeholder="Enter width">
-                    <br><br>
-                    <input class="height" type="text" id="height" placeholder="Enter height">
-                    <br><br>
-                    <input class="height" type="text" id="bg" placeholder="Enter background color">
-                    <br><br>
-                    <input class="height" type="text" id="bordRadius" placeholder="Enter border radius">
-                    <br><br>
-                    <input class="height" type="text" id="float" placeholder="Enter float">
-                    <br><br>
-                    <input class="height" type="text" id="textColor" placeholder="Enter text color">
-                    <br><br>
-                    <input class="height" type="text" id="border" placeholder="Enter border parameters">
-                    <br><br>
-                    <input class="height" type="text" id="photo" placeholder="Enter photo name">
-                    <br><br>
-                    <input class="height" type="text" id="bcksize" placeholder="Enter background size">
-                    <br><br>
-                    <input class="height" type="text" id="bckpos" placeholder="Enter background position">
-                    <br><br>
-                    
+                <div id="chatbox">
+                    <div id="openclose" onclick="chatbox()">＜</div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-arrows-h" aria-hidden="true"></i>
+                        </div>
+                        <input class="height" type="text" id="width" placeholder="Enter width">
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-arrows-v" aria-hidden="true"></i>
+                        </div>
+                        <input class="height" type="text" id="height" placeholder="Enter height">
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-square" aria-hidden="true"></i>
+                        </div>
+                        <input class="height" type="text" id="bg" placeholder="Enter background color">
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        </div>
+                        <input class="height" type="text" id="bordRadius" placeholder="Enter border radius">
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-columns" aria-hidden="true"></i>
+                        </div>
+                        <input class="height" type="text" id="float" placeholder="Enter float">
+                    </div>
+                   <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-align-left" aria-hidden="true"></i>
+                    </div>
+                        <input class="height" type="text" id="textColor" placeholder="Enter text color">
+                   </div>
+                   <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                    </div>
+                        <input class="height" type="text" id="border" placeholder="Enter border parameters">
+                   </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        </div>
+                        <input class="height" type="text" id="photo" placeholder="Enter photo name">
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        </div>
+                        <input class="height" type="text" id="bcksize" placeholder="Enter background size">
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                        </div>
+                        <input class="height" type="text" id="bckpos" placeholder="Enter background position">
+                    </div>
                     <button class="btn" onclick="main()">DONE</button>                    
                 </div>
-            </div>
         </div>
     </div>
 

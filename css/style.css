@@ -6,26 +6,80 @@
     padding: 30px 40px;
 }
 
-.border{
+.icon{
+    width: 50px;
+    height: 55px;
+    /* background-color: azure; */
+    float: left;
+    padding-right: 12px;
+    font-size: 18px;
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: 0.5s;
+}
+
+.box{
+    width: 260px;
+    height: 55px;
+    float: left;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.box:hover , .icon:hover{
+    background-color: lightslategray;
+}
+
+#openclose{
+    width: 30px;
+    height: 40px;
+    float: left;
+    background-color: bisque;
+    position: absolute;
+    left: -30px;
+    bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 22px;
+}
+
+#chatbox{
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    bottom: 0px;
+    right: -260px;
+    transition: 0.5s;
     padding-top: 10px;
-    border-radius: 8px 0 0 8px;
     background-color: black;
     text-align: center;
-    height: 100vh;
+    
+}
+
+.right_0{
+    right: 0px!important;
 }
 
 .btn{
     width: 100px;
     height: 30px;
     border-radius: 6px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #918d8d;
 }
 
 .height{
     width: 180px;
-    height: 35px;
+    height: 30px;
     border-radius: 4px;
 }

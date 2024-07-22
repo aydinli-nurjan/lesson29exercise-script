@@ -13,7 +13,7 @@ function main(){
     let div = document.getElementById('main')
     div.style.width = width
     div.style.height = height
-    div.style.background = bg
+    div.style.backgroundColor = bg
     div.style.borderRadius = bordRadius
     div.style.float = float
     div.style.color = textColor
@@ -31,9 +31,33 @@ function main(){
             div.style.backgroundImage = "url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/09/Header-and-social-image-of-big-name-Marvel-heroes.jpg')" 
             div.style.backgroundRepeat = "no-repeat"   
             break;
-        default:
-            div.style.background = "white"
     }
     div.style.backgroundSize = bcksize
     div.style.backgroundPosition = bckpos
+}
+
+
+function openChatbox(){
+    document.getElementById("chatbox").style.right = "0px"
+}
+
+function closeChatbox(){
+    document.getElementById("chatbox").style.right = "-260px"
+}
+
+function chatbox(){
+    let chatbox = document.getElementById('chatbox')
+    chatbox.classList.toggle('right_0')
+
+    let back = document.getElementById('openclose')
+
+    if(back.textContent == '＜'){
+        document.getElementById('openclose').innerHTML = 'X'
+        back.style.background = 'grey'
+        back.style.color = 'white'
+    }else{
+        document.getElementById('openclose').innerHTML = '＜'
+        back.style.background = 'bisque'
+        back.style.color = 'black'
+    }
 }
