@@ -31,7 +31,7 @@
 }
 
 .box:hover , .icon:hover{
-    background-color: lightslategray;
+    background-color: rgb(116, 23, 23);
 }
 
 #openclose{
@@ -54,12 +54,11 @@
     height: 100vh;
     position: fixed;
     bottom: 0px;
+    text-align: center;
     right: -260px;
     transition: 0.5s;
     padding-top: 10px;
     background-color: black;
-    text-align: center;
-    
 }
 
 .right_0{
